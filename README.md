@@ -1,7 +1,10 @@
 # car-rental-booking-website
 TMF2254 Web-Based System Development (Project Prototype)
 
-## Demo
+## Simple Demo of CarMe
+
+
+https://github.com/yantingling/car-rental-booking-website/assets/104501044/96ed248c-bd11-42a4-a26b-cf8f5d752d62
 
 
 ## Project Completion Timeline
@@ -9,13 +12,13 @@ TMF2254 Web-Based System Development (Project Prototype)
 
 ## Team (Geeklords)
 Geeklords is a team of 4
-1. Ling Yan Ting (most front-end development)
-2. Natalie Sia Xin Ying (most back-end development)
+1. Ling Yan Ting (most front-end development + email + print receipt)
+2. Natalie Sia Xin Ying (most back-end development + dashboard)
 3. Nur Athira Binti Azman (payment page and voucher reward)
 4. Thanish A/L Jayaraman (search by categories + logo design)
 
 ## Project Description
-My team had chosen to develop a car rental booking web application (CarMe) using HTML5, CSS, JavaScript, PHP and MySQL. The website must be hosted online and evaluated by the instructor. The project was required to follow the given requirements:
+My team had chosen to develop a car rental booking web application (CarMe) using HTML, CSS, JavaScript, PHP and MySQL. The website must be hosted online and evaluated by the instructor. The project was required to follow the given requirements:
 
 ### User Requirements
 This project expects the web application to have these necessary features:
