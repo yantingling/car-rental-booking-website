@@ -64,3 +64,4 @@ This project expects the web application to have these necessary features:
 ## Credits
 - PHPMailer: https://github.com/PHPMailer/PHPMailer
 - Landing page sample design (tutorial): https://youtu.be/dbTe7pmqLv4
+- Boxicons: https://boxicons.com/
