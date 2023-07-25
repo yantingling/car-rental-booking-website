@@ -12,10 +12,13 @@ https://github.com/yantingling/car-rental-booking-website/assets/104501044/96ed2
 
 ## Team (Geeklords)
 Geeklords is a team of 4
-1. Ling Yan Ting (most front-end development + email + print receipt)
-2. Natalie Sia Xin Ying (most back-end development + dashboard)
-3. Nur Athira Binti Azman (payment page and voucher reward)
-4. Thanish A/L Jayaraman (search by categories + logo design)
+1. Ling Yan Ting
+    - contributed in 85% of the front-end development, and
+    - 15% of the back-end development, specifically for debugging, e-mail, shopping cart & payment calculations)
+2. Natalie Sia Xin Ying
+    - contributed in 85% of the back-end development, especially member and admin dashboards, login and registration pages
+4. Nur Athira Binti Azman (payment page and voucher reward)
+5. Thanish A/L Jayaraman (search by categories + logo design)
 
 ## Project Description
 My team had chosen to develop a car rental booking web application (CarMe) using HTML, CSS, JavaScript, PHP and MySQL. The website must be hosted online and evaluated by the instructor. The project was required to follow the given requirements:
