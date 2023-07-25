@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
+
+.container-logo{
+    padding: auto;
+}
+
+.logo{
+    width: 100px;
+    /* height: 70px; Turned off on 28/12 */
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: var(--bg-color);
+    margin: 0;
+    
+}
+
+.invoice-box{
+    max-width: 800px;
+    margin: 2rem;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Arial,sans-serif;
+}
+
+.invoice-box table{
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+
+.invoice-box table td{
+    padding: 5px;
+    vertical-align: top;
+}
+
+.invoice-box table tr td:nth-child(2){
+    text-align: right;
+}
+
+.invoice-box table tr.top table td{
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.information table td{
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.heading td{
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.invoice-box table tr.details td{
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td{
+    border-bottom: 1px solid #eee;
+}
+
+.line{
+    height: 5px;
+    background: linear-gradient(
+      to bottom,
+      transparent 2px,
+      black 2px,
+      black 3px,
+      transparent 3px
+    );
+    padding-bottom: 20px;
+}
+
+.buttons
+{
+    text-align: center;
+}
+
+#print-button,
+#done-button
+{
+    background-color: rgb(69, 99, 164);
+    font-size: 1rem;
+    border: none;
+    padding: 5px 10px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#done-button
+{
+    background-color: maroon;
+}
+
+#done-button a
+{
+    color: white;
+}
+
+#print-button:hover,
+#done-button:hover
+{
+    cursor: pointer;
+    background-color: rgb(255, 165, 0);
+}
+
+@media only screen and (max-width:600px){
+    
+    .invoice-box table tr.top table td
+    {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .invoice-box table tr.information table td
+    {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .invoice-box
+    {
+        width: fit-content;
+        display: block;
+    }
+}

@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family:"Montserrat", Verdana , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root
+{
+    --orange-tone: rgb(255, 165, 0);
+    --blue-tone:  rgb(69, 99, 164);
+    --beige-tone: rgb(255, 244, 207);
+    --red-tone: rgb(171, 2, 2);
+    --text-color: #444;
+    --gradient: linear-gradient(to top left, rgb(138, 80, 130),rgb(19, 63, 145));
+}
+
+body
+{
+    background-color: whitesmoke;
+}
+
+/*Custom Scrollbar*/
+html::-webkit-scrollbar
+{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: var(--blue-tone);
+    border-radius: 5rem;
+}
+
+.user-image
+{
+    margin: 20px;
+    text-align: center;
+}
+
+.user-image img
+{
+    width: 150px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 3px solid white;
+}
+
+.heading-text
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 2rem;
+}
+
+/*design for pop-up windows (registration, login and contact us form)*/
+.ml-form-container form,
+.al-form-container form,
+.mr-form-container form,
+.cu-form-container form,
+.fp-form-container form,
+.emp-form-container form,
+.eap-form-container form,
+.nc-form-container form,
+.ec-form-container form,
+.dlt-form-container form
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 3rem;
+    background-color: var(--orange-tone);
+    height: fit-content;
+}
+
+.ml-input-box span,
+.al-input-box span,
+.mr-input-box span,
+.cu-input-box span,
+.fp-input-box span,
+.emp-input-box span,
+.eap-input-box span,
+.nc-input-box span,
+.ec-input-box span,
+.dlt-input-box span
+{
+    font-weight: 500;
+    padding-left: 3px;
+    font-size: 1.2rem;
+}
+
+.ml-input-box input,
+.al-input-box input,
+.mr-input-box input,
+.cu-input-box input,
+.cu-input-box textarea,
+.fp-input-box input,
+.emp-input-box input,
+.eap-input-box input,
+.nc-input-box input,
+.ec-input-box input
+{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 7px;
+    outline: none;
+    border: none;
+    background-color: var(--beige-tone);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.cu-input-box textarea
+{
+    height: 150px;
+    resize: none;
+}
+
+.ml-input-box input:focus,
+.al-input-box input:focus,
+.mr-input-box input:focus,
+.cu-input-box input:focus,
+.cu-input-box textarea:focus,
+.fp-input-box input:focus,
+.emp-input-box input:focus,
+.eap-input-box input:focus,
+.nc-input-box input:focus,
+.ec-input-box input:focus
+{
+    border: 2px solid var(--blue-tone);
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.ml-button,
+.ml-cncl-button,
+.al-button,
+.al-cncl-button,
+.fp-button,
+.fp-cncl-button,
+.mr-button,
+.mr-cncl-button,
+.cu-button,
+.cu-cncl-button,
+.emp-button,
+.emp-cncl-button,
+.eap-button,
+.eap-cncl-button,
+.nc-button,
+.nc-cncl-button,
+.ec-button,
+.ec-cncl-button,
+.dlt-button,
+.dlt-cncl-button
+{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 0.5rem;
+    background:var(--blue-tone);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.ml-button,
+.al-button,
+.fp-button,
+.mr-button,
+.cu-button,
+.emp-button,
+.eap-button,
+.nc-button,
+.ec-button,
+.dlt-button
+{
+    margin-left: 5px;
+}
+
+.ml-cncl-button,
+.al-cncl-button,
+.fp-cncl-button,
+.mr-cncl-button,
+.cu-cncl-button,
+.emp-cncl-button,
+.eap-cncl-button,
+.nc-cncl-button,
+.ec-cncl-button,
+.dlt-cncl-button
+{
+    background:var(--red-tone);
+    margin-right: 5px;
+}
+
+.ml-button:hover,
+.al-button:hover,
+.fp-button:hover,
+.mr-button:hover,
+.cu-button:hover,
+.emp-button:hover,
+.eap-button:hover,
+.nc-button:hover,
+.ec-button:hover,
+.dlt-button:hover
+{
+    background:var(--beige-tone);
+    color: var(--blue-tone);
+}
+
+.ml-cncl-button:hover,
+.al-cncl-button:hover,
+.fp-cncl-button:hover,
+.mr-cncl-button:hover,
+.cu-cncl-button:hover,
+.emp-cncl-button:hover,
+.eap-cncl-button:hover,
+.nc-cncl-button:hover,
+.ec-cncl-button:hover,
+.dlt-cncl-button:hover
+{
+    background:var(--beige-tone);
+    color: var(--red-tone);
+}
+
+.ad-button
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.ru-admin
+{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 0.5rem;
+    background:var(--gradient);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.ru-admin:hover
+{
+    background:var(--beige-tone);
+    color: var(--text-color);
+}
+
+.ml-register
+{
+    font-size: 0.9rem;
+    float:left;
+    margin-left: 8px;
+    color: var(--blue-tone);
+    text-decoration: underline;
+}
+
+.ml-forgot-pw,
+.al-forgot-pw,
+.mr-had-acc
+{
+    font-size: 0.9rem;
+    float:right;
+    margin-right: 12px;
+    color: var(--blue-tone);
+    text-decoration: underline;
+}
+
+.pp
+{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.pp p{
+    font-size: 0.9rem;
+    color: black;
+}
+
+.privacy-policy
+{
+    text-decoration: underline;
+    color: var(--blue-tone);
+}
+
+.ml-forgot-pw:hover,
+.ml-register:hover,
+.al-forgot-pw:hover,
+.mr-had-acc:hover,
+.privacy-policy:hover
+{
+    color:var(--beige-tone);
+}
+
+.regi-msg
+{
+    text-align: left;
+    display: flex;
+}
+
+.regi-msg p:empty
+{
+    display: none;
+}
+
+.regi-msg p
+{
+    background-color: var(--red-tone);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: small;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+
+/*Responsive*/
+@media(max-width: 655px)
+{
+    .buttons{
+        flex-wrap: wrap;
+    }
+
+    .ml-forgot-pw,
+    .ml-register,
+    .al-forgot-pw
+    {
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 0;
+    }
+}
+
+@media(max-width: 480px)
+{
+    .user-image img{
+        width: 125px
+    }
+}
+
+@media(max-width: 380px)
+{
+    .user-image img{
+        width: 100px
+    }
+}

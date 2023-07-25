@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family:"Montserrat", Verdana , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root
+{
+    --orange-tone: rgb(255, 165, 0);
+    --blue-tone:  rgb(69, 99, 164);
+    --beige-tone: rgb(255, 244, 207);
+    --red-tone: rgb(171, 2, 2);
+    --text-color: #444;
+    --gradient: linear-gradient(to top left, rgb(138, 80, 130),rgb(19, 63, 145));
+}
+
+body
+{
+    background-color: whitesmoke;
+}
+
+/*Custom Scrollbar*/
+html::-webkit-scrollbar
+{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: var(--blue-tone);
+    border-radius: 5rem;
+}
+
+/*section*/
+section
+{
+    padding: 50px 100px;
+}
+
+/*header bar design*/
+header
+{
+    position:static;
+    width: 100%;
+    z-index: 1;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    padding: 15px 100px;
+}
+
+.logo img
+{
+    width: 100px;
+}
+
+.navbar
+{
+    display: flex;
+}
+
+.navbar li
+{
+    position: static;
+}
+
+.navbar a
+{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    display: inline;
+    background-image: var(--gradient);
+    background-size: 0% 3px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background 0.3s linear;
+}
+
+.navbar a:hover
+{
+    background-size: 100% 3px;
+}
+
+#menu-icon
+{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+#user-icon
+{
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10001;
+    color: var(--blue-tone);
+    display: show;
+}
+
+#user-icon:hover
+{
+    color: var(--orange-tone);
+}
+
+.header-button a
+{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.header-button .login
+{
+    background: var(--blue-tone);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.header-button .login:hover
+{
+    background-color: var(--orange-tone);
+    color: var(--blue-tone);
+    cursor: pointer;
+}
+
+/*Member Account (ma) dropdown menu*/
+.ma-dropdown
+{
+    position: absolute;
+    z-index: 4;
+    top: 70px;
+    right: 15px;
+    text-align: left;
+    width: 200px;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.ma-dropdown.open-menu
+{
+    display: flex;
+}
+
+.ma-dropdown-menu
+{
+    background: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    padding: 12px;
+}
+
+.ma-dropdown-menu a
+{
+    padding: 1rem;
+    margin: 0.5rem;
+    color: var(--text-color);
+    border-left: 2px solid var(--blue-tone);
+    display: block;
+}
+
+.ma-dropdown-menu a:hover
+{
+    color: white;
+    background: var(--blue-tone);
+    border: none;
+}
+
+/*Home section design*/
+.home
+{
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.bg-img
+{
+    display: flex;
+    justify-content: center;
+}
+
+.bg-img img
+{
+    position: static;
+    width: 500px;
+}
+
+.text h1
+{
+    font-size: 3.7rem;
+    letter-spacing: 2px;
+}
+
+.text span
+{
+    color: var(--orange-tone);
+}
+
+.text p
+{
+    margin: 00.5rem 0 1rem;
+}
+
+/*Heading texts for every section*/
+.heading
+{
+    text-align: center;
+}
+
+.heading p
+{
+    font-weight:500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.heading h1
+{
+    font-size: 2rem;
+}
+
+/*search design */
+.form-container form
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: static;
+    background: var(--orange-tone);
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.input-box
+{
+    display: flex;
+    flex: 1 1 7rem;
+    flex-direction: column;
+}
+
+.input-box span
+{
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-left: 2px;
+}
+
+.input-box input
+{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background-color: var(--beige-tone);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.input-box select{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background-color: var(--beige-tone);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-container form .search-button
+{
+    flex: 1 1 7rem;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 0.5rem;
+    background:var(--blue-tone);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.form-container form .search-button:hover{
+    background:var(--beige-tone);
+    color: var(--blue-tone);
+}
+
+/*Design for guides and services sections*/
+.guides-container,
+.services-container
+{
+    display: grid;
+    align-items: start center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.guides-container .box,
+.services-container .box
+{   
+    text-align:center;
+    padding:20px;
+}
+
+.guides-container .box .bx,
+.services-container .box .bx
+{
+    font-size: 35px;
+    margin-bottom: 3px;
+    color: var(--orange-tone);
+}
+
+.guides-container .box h2,
+.services-container .box h2,
+.cars-container .box h2
+{
+    font-size:1.4rem;
+    font-weight:500;
+    margin: 1.4rem 0 0.5rem;
+}
+
+/*Design for cars section*/
+.cars-container{
+    display: grid;
+    align-items: start center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cars-container .box{
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.cars-container .box .cars-img{
+    width: 100%;
+    height: 200px;
+}
+
+.cars-container .box .cars-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit:contain;
+    object-position: center;
+}
+
+.cars-container .box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--blue-tone);
+    margin: 0.2rem 0 0.5rem;
+}
+
+.cars-container .box h3{
+    font-size: 1.05rem;
+    font-weight:  500;
+}
+
+.cars-container .box p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--orange-tone);
+}
+
+
+
+/*Design for about section*/
+.about-container{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto)) ;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.about-image img{
+    width: 50%;
+}
+
+.about-text p{
+    margin: 0.5rem 0 1.4rem;
+    text-align: left;
+}
+
+/*Design for newsletter section*/
+.newsletter{
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter h2{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.newsletter .box{
+    margin-top: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 8px 8px;
+    width: fit-content;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+
+}
+
+.newsletter .box input{
+    border: none;
+    outline: none;
+}
+
+.newsletter .box .enter-email
+{
+    width: 265px;
+    padding: 10px;
+}
+
+.newsletter .box .subscribe-button{
+    padding: 8px 20px;
+    background: var(--blue-tone);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.newsletter .box .subscribe-button:hover{
+    background: var(--orange-tone);
+    color: var(--blue-tone);
+}
+
+/*Design for footer*/
+footer{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.support
+{
+    display: flex;
+}
+
+.support li
+{
+    position: relative;
+}
+
+.support a
+{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: var(--text-color);
+}
+
+.support a:hover
+{
+    color: var(--orange-tone);
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+/*Responsive*/
+@media(max-width: 1120px) {
+    .bg-img
+    {
+        width: 350px;
+    }
+}
+
+@media(max-width: 991px)
+{
+    header{
+        padding: 18px 40px;
+    }
+
+    section{
+        padding: 50px 40px;
+    }
+
+    .bg-img
+    {
+        display: none;
+    }
+
+    .form-container form{
+        bottom: 0.2rem;
+        left: 40px;
+    }
+}
+
+@media(max-width: 881px)
+{
+    .home{
+        background-position: left;
+        background-image: none;
+        grid-template-columns: 1fr;
+    }
+
+    .text h1{
+        letter-spacing: 0;
+    }
+}
+
+@media(max-width: 830px)
+{
+    header{
+        padding: 11px 40px;
+    }
+
+    #menu-icon{
+        display: initial;
+    }
+
+    .text h1{
+        font-size: 3rem;
+    }
+
+    .text{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    header .navbar{
+        position: absolute;
+        z-index: 4;
+        top: 100px;
+        left: 0;
+        right: 0;
+        transition: 0.1s ease;
+        text-align: left;
+        display: none;
+    }
+
+    .navbar.active{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar a{
+        padding: 1rem;
+        border-left: 2px solid var(--blue-tone);
+        margin: 0.5rem;
+        display: block;
+        background-image: none;
+        transition: none;
+    }
+
+    .navbar a:hover{
+        color: white;
+        background-color: var(--blue-tone);
+        border: none;
+    }
+
+    .heading p{
+        font-size: 0.9rem;
+    }
+
+    .heading h1{
+        font-size: 1.6rem ;
+    }
+
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+
+    .about-text p{
+        text-align: center;
+    }
+
+    .about-image{
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 655px)
+{
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .copyright{
+        order: 1;
+    }
+}
+
+@media(max-width: 550px)
+{
+    .newsletter .box{
+        width: 284px;
+    }
+
+    .newsletter h2{
+        font-size: 1.4rem;
+    }    
+
+    .newsletter .box .subscribe-button
+    {
+        float: right;
+    }
+}
+
+@media (max-width: 420px)
+{
+    header{
+        padding: 5px 14px;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    section{
+        padding: 50px 7px;
+    }
+
+    .cars-container{
+        grid-template-columns: repeat(auto-fit, minmax(254px, auto));
+    }
+
+    .newsletter .box .enter-email
+    {
+        width: 150px;
+    }
+}
+
+@media (max-width: 411px)
+{
+    header{
+        padding: 5px 14px;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    .text h1{
+        font-size: 2.5rem;
+    }
+
+    section{
+        padding: 70px 7px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.8rem;
+    }
+
+    .copyright{
+        order: 1;
+    }
+
+    .support{
+        display: block;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .support li span{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 380px)
+{
+    .newsletter .box{
+        width: 200px;
+        display: block;
+    }
+
+    .newsletter h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .newsletter .box input{
+        font-size: 0.8rem;
+    }
+    
+    .newsletter .box .subscribe-button{
+        padding: 5px 15px;
+        border-radius: 0.3rem;
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+}

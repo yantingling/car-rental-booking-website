@@ -1,0 +1,481 @@
+@import url(styles.css);
+
+header
+{
+  background: white;
+  z-index: 1;
+}
+
+/*sidebar*/
+.filter
+{
+  width: 250px;
+  left: 0;
+  top: 173px;
+  height: 100vh;
+  z-index: 2;
+  overflow-x: hidden;
+  background: var(--gradient);
+  /*border-right: 1px solid lightgrey;*/
+}
+
+.fixed
+{
+  position: fixed;
+  top: 79px;
+  z-index: 2;
+}
+
+/*the search options entered by user from the home page*/
+.entered_field
+{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background: white;
+  padding: 20px 50px;
+  box-shadow: inset 0px 10px 10px -10px lightgrey;
+  overflow: hidden;
+  width: 100%;
+  z-index: 3;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.choices
+{
+  display: flex;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.choices li
+{
+  position: static;
+  color: black;
+  padding: 0 20px;
+}
+
+.choices li.a
+{
+  border-right: 1px solid lightgrey;
+}
+
+.choices span
+{
+  font-size: 1rem;
+  padding: 10px 20px;
+  display: inline;
+}
+
+.edit-choice-button a
+{
+  font-weight: bold;
+  font-size: 0.9rem;
+  float: right;
+  font-size: 20px;
+  color: black;
+}
+
+.edit-choice-button .edit-choice
+{
+  color: black;
+  border-radius: 0.5rem;
+}
+
+.edit-choice-button .edit-choice:hover
+{
+  color: var(--orange-tone);
+  cursor: pointer;
+}
+
+/*the filter menu*/
+.filter-menu
+{
+  margin: 4rem 3rem;
+  color: white;
+  z-index: 2;
+}
+
+.filter-menu ul
+{
+  margin-bottom: 2rem;
+}
+
+.filter-menu li
+{
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1.5rem;
+}
+
+.filter-menu li span
+{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.filter-text
+{
+  margin-bottom: 10px;
+}
+
+.checkbox input
+{
+  margin-right: 5px;
+}
+
+.checkbox:hover
+{
+  cursor: pointer;
+}
+
+.checkbox input:checked
+{
+  width: 16px;
+  height: 16px;
+}
+
+/*main content*/
+.main-content
+{
+  margin: 30px 10px 0px 300px;
+  top: 180px;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+}
+
+.result{
+  display: grid;
+  align-items: start center;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  width: 100%;
+  margin: 1rem;
+  z-index: 2;
+}
+
+.result .filterDiv{
+  display: block;
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 41px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  background-color: white;
+  z-index: 2;
+}
+
+.result .filterDiv .cars-img
+{
+  width: 400px;
+  height: 200px;
+}
+
+.result .filterDiv .cars-img img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  object-position: center;
+}
+
+.result .filterDiv h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--blue-tone);
+  margin: 0.2rem 0 0.5rem;
+}
+
+.result .filterDiv h3{
+  font-size: 1.05rem;
+  font-weight:  500;
+}
+
+.result .filterDiv p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--orange-tone);
+}
+
+.result .filterDiv form .addCartBtn
+{
+  padding: 10px 35px;
+  border: none;
+  border-radius: 0.5rem;
+  background:var(--blue-tone);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.result .filterDiv form .addCartBtn:hover
+{
+  background-color: var(--orange-tone);
+  color: var(--blue-tone);
+  cursor: pointer;
+}
+
+/*Responsive*/
+@media(max-width: 1290px)
+{
+  .result .filterDiv .cars-img
+  {
+    width: 380px;
+    height: 200px;
+  }
+}
+
+@media(max-width: 1260px)
+{
+  .main-content
+  {
+    margin-left: 280px;
+  }
+}
+
+@media(max-width: 1235px)
+{
+  .main-content
+  {
+    margin-left: 260px;
+    margin-right: 5px;
+  }
+}
+
+@media(max-width: 1190px)
+{
+  .result .filterDiv .cars-img
+  {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media(max-width: 1125px)
+{
+  .result .filterDiv .cars-img
+  {
+    width: 320px;
+    height: 200px;
+  }
+}
+
+@media(max-width: 1065px)
+{
+  .result .filterDiv .cars-img
+  {
+    width: 290px;
+    height: 200px;
+  }
+}
+
+@media(max-width: 1000px)
+{
+  .result .filterDiv .cars-img
+  {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media(max-width: 920px)
+{
+  .result .filterDiv .cars-img
+  {
+    width: 230px;
+    height: 200px;
+  }
+}
+
+@media(max-width: 900px)
+{
+  .main-content
+  {
+    margin-top: 160px;
+    margin-left: 20px;
+  }
+
+  .result
+  {
+    grid-template-columns: auto;
+  }
+
+  .result .filterDiv .cars-img
+  {
+    width: 100%;
+    height: 200px;
+  }
+
+  .filter
+  {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-menu
+  {
+    margin: 1rem 2rem;
+  }
+
+  .filter-menu ul
+  {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .filter-menu li
+  {
+    position: static;
+    width: 100%;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  .filter-menu li div
+  {
+    display: inline;
+  }
+
+  .filter-menu li .Brands .filter-text span
+  {
+    padding-right: 15px;
+    border-right: 1px solid lightgrey;
+    margin-right: 15px;
+  }
+
+  .filter-menu li .Types .filter-text span
+  {
+    padding-right: 27px;
+    border-right: 1px solid lightgrey;
+    margin-right: 15px;
+  }
+
+  .filter-menu li .Seaters .filter-text span
+  {
+    padding-right: 12px;
+    border-right: 1px solid lightgrey;
+    margin-right: 15px;
+  }
+
+  .filter-menu li .Brands .checkbox .prt
+  {
+    margin-right: 43px;
+  }
+
+  .filter-menu li .Types .checkbox .htb,
+  .filter-menu li .Types .checkbox .sdn
+  {
+    margin-right: 10px;
+  }
+
+  .filter-menu li .Seaters .checkbox .fs
+  {
+    margin-right: 26px;
+  }
+}
+
+@media(max-width: 615px)
+{
+  .fixed
+  {
+    top: 75px;
+  }
+
+  .entered_field
+  {
+    padding: 10px;
+  }
+
+  #editIcon
+  {
+    padding-right: 10px;
+  }
+  .choices
+  {
+    display: block;
+  }
+
+  .choices li{
+    text-align: left;
+  }
+
+  .choices li.a
+  {
+    border:none;
+  }
+}
+
+@media(max-width: 520px)
+{
+  .main-content
+  {
+    margin-top: 180px;
+    margin-right: 40px;
+  }
+}
+
+@media(max-width: 440px)
+{
+
+  .filter-menu li div
+  {
+    display: inline-block;
+  }
+
+  .filter-menu li .checkbox
+  {
+    display: block;
+  }
+
+  .filter-menu li .Brands .filter-text span,
+  .filter-menu li .Types .filter-text span,
+  .filter-menu li .Seaters .filter-text span
+  {
+    padding-right: 0;
+    border-right: none;
+    margin-right: 0;
+  }
+
+  .filter-menu li .Brands .checkbox .prt,
+  .filter-menu li .Types .checkbox .htb,
+  .filter-menu li .Types .checkbox .sdn,
+  .filter-menu li .Seaters .checkbox .fs
+  {
+    margin-right: 5px;
+  }
+
+  .main-content
+  {
+    margin-top: 360px;
+    margin-right: 40px;
+  }
+
+}
+
+@media(max-width: 414px)
+{ 
+  .main-content
+  {
+    margin-top: 340px;
+    margin-right: 40px;
+  }
+}
+
+@media(max-width: 360px)
+{
+  .choices li span{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family:"Montserrat", Verdana , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root
+{
+    --orange-tone: rgb(255, 165, 0);
+    --blue-tone:  rgb(69, 99, 164);
+    --beige-tone: rgb(255, 244, 207);
+    --red--tone: rgb(171, 2, 2);
+    --text-color: #444;
+    --gradient: linear-gradient(to top left, rgb(138, 80, 130),rgb(19, 63, 145));
+}
+
+body
+{
+    background-color: whitesmoke;
+}
+
+/*Custom Scrollbar*/
+html::-webkit-scrollbar
+{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: var(--blue-tone);
+    border-radius: 5rem;
+}
+
+/*Header bar*/
+header
+{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2.2rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+header h3
+{
+    color: var(--blue-tone);
+    display: flex;
+    align-items: center;
+}
+
+#member_dashboard,
+#home
+{
+    font-size: 30px;
+    color: var(--blue-tone);
+    margin: 10px;
+    rotate: 0deg;
+}
+
+#member_dashboard:hover,
+#home:hover
+{
+    color: var(--orange-tone);
+}
+
+/*sidebar*/
+.sidebar
+{
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    height: 100%;
+    background: var(--gradient);
+    z-index: 3;
+    overflow-x: hidden;
+}
+
+.avatar-wrapper
+{
+    margin: 2rem 0rem;
+    text-align: center ;
+    color: white;
+}
+
+.avatar-wrapper img
+{
+    width: 75px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.sidebar-menu
+{
+    margin: 3rem 2rem;
+}
+
+.sidebar-menu ul
+{
+    margin-bottom: 2rem;
+}
+
+.sidebar-menu li
+{
+    margin-bottom: 2rem;
+    color: white;
+    width: 100%;
+}
+
+.sidebar-menu a
+{
+    display: block;
+    padding-left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.sidebar-menu a span:first-child
+{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    transform: translateY(4px);
+}
+
+.sidebar-menu a:hover
+{
+    background: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 30px 0px 0px 30px;
+    transition: ease-in-out 0.2s;
+}
+
+.main-content
+{
+    margin-left: 280px;
+    margin-right: 15px;
+    z-index: 2;
+    top: 70px;
+    position: relative;
+}
+
+.profile,
+.booking
+{
+    padding: 1.5rem;
+    min-height: calc(100vh - 70px);
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header h2
+{
+    margin-left: 2rem;
+}
+
+.edit-profile-button button
+{
+    padding: 8px 15px;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-right: 21px;
+    background-color: var(--blue-tone);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.edit-profile-button button:hover
+{
+    background-color: var(--orange-tone);
+    color: var(--blue-tone);
+    cursor: pointer;
+}
+
+#edit
+{
+    padding-left: 5px;
+    font-size: 20px;
+    transform: translateY(3px);
+}
+
+.grid
+{
+    display: block;
+    margin: 2rem;
+    width: 95%;
+}
+
+.personal-info,
+.login-info,
+.booking-info
+{
+    background: white;
+    padding: 2rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    width: 100%;
+}
+
+.grid-head span
+{
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.15rem;
+}
+
+.grid-head p
+{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 8px;
+}
+
+.grid-body-profile,
+.grid-body-booking
+{
+    overflow-x: auto;
+}
+
+.grid-body-profile table
+{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.grid-body-profile th
+{
+    text-align: left;
+    width: 35%;
+}
+
+.grid-body-profile table,
+.grid-body-profile th,
+.grid-body-profile td
+{
+    border-bottom: 1px solid lightgrey;
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+.grid-body-booking table
+{
+    width: 100%;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+.grid-body-booking th,
+.grid-body-booking td
+{
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.grid-body-booking th
+{
+    background-color: var(--blue-tone);
+    color: white;
+    border-bottom: 1px solid lightgrey;
+}
+
+.grid-body-booking tr
+{
+    border-bottom: 1px solid lightgrey;
+}
+
+.grid-body-booking td
+{
+    border-left: 1px dashed rgb(229, 227, 227);
+}
+
+.grid-body-booking table tr:first-child td
+{
+    border-top: 0;
+}
+
+.grid-body-booking table tr td:first-child
+{
+    border-left: 0;
+}
+
+.grid-body-booking table tr tr:last-child
+{
+    border-bottom: 0;
+}
+
+.grid-body-booking table tr td:last-child
+{
+    border-right: 0;
+}
+
+.no-bookings
+{
+    color: var(--red--tone);
+    text-align: center;
+    font-weight: 500;
+}
+
+.voucher-btn{
+    background-color: rgb(88, 88, 182); 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border:none;
+    font-weight: bold;
+}
+
+.voucher-btn:hover{
+    background-color: rgb(19, 63, 145); 
+    cursor: pointer;
+}
+/*Responsive*/
+@media(max-width: 1120px){
+    
+    .sidebar
+    {
+        width: 0;
+    }
+
+    .sidebar.showup
+    {
+        width: 280px;
+        transition: ease-in 0.1s;
+    }
+
+    #member_dashboard.rotateIcon
+    {
+        rotate: 45deg;
+    }
+
+    .main-content
+    {
+        margin-left: 0px;
+        transition: ease-in 0.1s;
+    }
+}
+
+@media(max-width: 800px){
+
+    .grid
+    {
+        width: 92%;
+    }
+}
+
+@media(max-width: 500px){
+    .page-header
+    {
+        display: block;
+    }
+
+    .page-header .edit-profile-button
+    {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .main-content
+    {
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 380px){
+
+    .sidebar.showup
+    {
+        width: 230px;
+        transition: ease-in 0.1s;
+    }
+
+    .sidebar-menu
+    {
+        margin: 2rem 1rem;
+    }
+
+
+    .sidebar-menu a
+    {
+        font-size: 1rem;
+    }
+
+    .sidebar-menu a span:first-child
+    {
+        font-size: 1.2rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media(max-width: 275px)
+{
+    .grid
+    {
+        width: fit-content;
+    }
+}
+
+

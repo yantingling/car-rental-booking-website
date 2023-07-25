@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body{
+    min-height: 100vh;
+    background: whitesmoke;
+}
+.container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.coupon-card{
+    background:linear-gradient(135deg, #09003a, #bbf0ff);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px 80px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+.logo{
+    width: 80px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.coupon-card h3{
+    font-size:28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.coupon-card p{
+    font-size: 15px;
+}
+.coupon-row{
+    display:flex;
+    align-items: center;
+    margin: 25px auto;
+    width: fit-content;
+}
+#cpnCode{
+    border:1px dashed rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-right:0;
+}
+#cpnBtn{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 20px;
+    color: #7158;
+    cursor: pointer;
+}  
+.circle1, .circle2{
+    background: whitesmoke;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.circle1{
+    left:-25px;
+}
+.circle2{
+    right:-25px;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(../images/closeicon.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+
+/* to make it responsive */
+
+@media (max-width: 767px)
+{
+    .contentBox
+    {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+    }
+    .contentBox .imgBx{
+        height: 200px;
+        transform: translateY(-50px);
+    }
+    .contentBox.content{
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;  
+    }
+    .close{
+        top:-50px;
+        right: -10px;
+        background: #f3f3f3 url(images/closeicon.png);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+    }
+    
+} 

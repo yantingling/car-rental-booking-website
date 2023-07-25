@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarMe Voucher</title>
+    <link rel = "stylesheet" type = "text/css" href = "../css/vouchers.css">
+</head>
+<body>
+
+    <div class = "container">
+        <div class="coupon-card">
+            <div class = "close">
+            </div>
+            <img src="../images/CarMeLogoFull100px.png">
+            <h3>20% off for all new registered users in CarMe <br> Be a part of us!</h3>
+            
+            <div class = "coupon-row">
+                <span id= "cpnCode"> WELCOME77</span>
+                <span id= "cpnBtn"> COPY CODE</span>
+            
+            </div>
+
+            <p> Valid for all new users</p>
+
+            <div class = "circle1"></div>
+            <div class = "circle2"></div>
+        </div>
+    </div>
+    <!-- Automatic show popup after 2sec of load-->
+    <script>
+        const popup = document.querySelector('.container');
+        const close = document.querySelector('.close');
+        
+        window.onload = function (){
+            setTimeout(function(){
+                popup.style.display = "block"
+
+            //Add some time delay to show popup
+            }, 500)
+        }
+
+        close.addEventListener('click', ()=>{
+            location.href = "rewards.php";
+        })
+    </script>
+    <script> 
+
+        var cpnBtn = document.getElementById("cpnBtn");
+        var cpnCode = document.getElementById("cpnCode");
+    
+        
+        cpnBtn.onclick = function(){
+            navigator.clipboard.writeText(cpnCode.innerHTML);
+            cpnBtn.innerHTML = "COPIED";
+            setTimeout(function(){
+                cpnBtn.innerHTML="COPY CODE";
+            },9000)
+        }
+    </script>
+</body>
+</html>
