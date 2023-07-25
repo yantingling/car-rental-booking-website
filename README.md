@@ -54,3 +54,7 @@ This project expects the web application to have these necessary features:
 4. HTML form input validation must be implemented using JavaScript and PHP.
 5. Database and table must be managed using PHP and MySQLi.
 6. Content management system (eg. Wix/WordPress/Drupal/Joomla etc) is NOT allowed. Front-end or back-end framework (eg. Bootstrap/ Angular/ React/ Node/ Yii/ Cake/ Laravel etc) is NOT allowed. If the requirements are not met, then your group will be given ZERO marks.
+
+## Credits
+PHPMailer: https://github.com/PHPMailer/PHPMailer
+Landing page sample design (tutorial): https://youtu.be/dbTe7pmqLv4
