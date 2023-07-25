@@ -117,7 +117,7 @@ CREATE TABLE `newsletter` (
 --
 
 INSERT INTO `newsletter` (`subscription_id`, `email`) VALUES
-(1, 'yanting_02@hotmail.com');
+(1, 'test@example.com');
 
 -- --------------------------------------------------------
 
@@ -140,7 +140,7 @@ CREATE TABLE `registration` (
 
 INSERT INTO `registration` (`memberID`, `fullname`, `username`, `email`, `password`, `confirmpw`) VALUES
 (1, 'Thanish Jay', 'nish', 'than@example.com', 'Yooo9090??', 'Yooo9090??'),
-(2, 'yanting', 'xyz123', 'yanting_02@hotmail.com', 'Abcd123??', 'Abcd123??'),
+(2, 'yanting', 'xyz123', 'test@example.com', 'Abcd123??', 'Abcd123??'),
 (3, 'Athira Azman', 'athirazm', 'athr@example.com', 'Ra123??', 'Ra123??');
 
 -- --------------------------------------------------------
