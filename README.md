@@ -1,6 +1,9 @@
 # car-rental-booking-website
 TMF2254 Web-Based System Development (Project Prototype)
 
+## Demo
+
+
 ## Project Completion Timeline
 20 December 2022 - 13 January 2023 (Year 2 Semester 1)
 
@@ -56,5 +59,5 @@ This project expects the web application to have these necessary features:
 6. Content management system (eg. Wix/WordPress/Drupal/Joomla etc) is NOT allowed. Front-end or back-end framework (eg. Bootstrap/ Angular/ React/ Node/ Yii/ Cake/ Laravel etc) is NOT allowed. If the requirements are not met, then your group will be given ZERO marks.
 
 ## Credits
-PHPMailer: https://github.com/PHPMailer/PHPMailer
-Landing page sample design (tutorial): https://youtu.be/dbTe7pmqLv4
+- PHPMailer: https://github.com/PHPMailer/PHPMailer
+- Landing page sample design (tutorial): https://youtu.be/dbTe7pmqLv4
