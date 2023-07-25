@@ -12,10 +12,10 @@ Geeklords is a team of 4
 1. Ling Yan Ting (most front-end development)
 2. Natalie Sia Xin Ying (most back-end development)
 3. Nur Athira Binti Azman (payment page and voucher reward)
-4. Thanish A/L Jayaraman (search by categories)
+4. Thanish A/L Jayaraman (search by categories + logo design)
 
 ## Project Description
-My team had chosen to develop a car rental booking web application using HTML5, CSS, JavaScript, PHP and MySQL. The website must be hosted online and evaluated by the instructor. The project was required to follow the given requirements:
+My team had chosen to develop a car rental booking web application (CarMe) using HTML5, CSS, JavaScript, PHP and MySQL. The website must be hosted online and evaluated by the instructor. The project was required to follow the given requirements:
 
 ### User Requirements
 This project expects the web application to have these necessary features:
