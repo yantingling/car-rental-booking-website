@@ -69,10 +69,10 @@
             if(mysqli_query($connection, $sqlupdate))
             {
                 $_SESSION["adminID"] = $adminID;
-                $_SESSION["fullname"] = $fname;
-                $_SESSION["username"] = $username;
-                $_SESSION["email"] = $email;
-                $_SESSION["password"] = $password;
+                $_SESSION["admin_fullname"] = $fname;
+                $_SESSION["admin_username"] = $username;
+                $_SESSION["admin_email"] = $email;
+                $_SESSION["admin_password"] = $password;
 
                 $successMsg = "Your profile is successfully updated.";
                 echo "<script>alert('$successMsg')</script>";
