@@ -14,7 +14,7 @@ https://github.com/yantingling/car-rental-booking-website/assets/104501044/96ed2
 Geeklords is a team of 4
 1. Ling Yan Ting
     - contributed in 75% of the front-end development, and
-    - 10% of the back-end development, mainly for debugging, e-mail, shopping cart & payment calculations)
+    - 10% of the back-end development, mainly for e-mail, searching, shopping cart & payment calculations
 2. Natalie Sia Xin Ying
     - contributed in 85% of the back-end development, especially the member and admin dashboards, login and registration pages
 4. Nur Athira Binti Azman (payment page and voucher reward)
